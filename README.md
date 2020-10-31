@@ -37,9 +37,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web1     | Gateway  | 10.0.0.5   | Linux            |
-| Web2     | Gateway  | 10.0.0.6   | Linux            |
-| Web3     | Gateway  | 10.0.0.7   | Linux            |
+| DVWA1    |Web Server| 10.0.0.5   | Linux            |
+| DVWA2    |Web Server| 10.0.0.6   | Linux            |
+| ELK      |Web Server| 10.0.0.7   | Linux            |
 
 ### Access Policies
 
@@ -56,9 +56,9 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 |  67.160.140.185      |
-|          |                     |                      |
-|          |                     |                      |
-
+| ELK      | No                  |    10.0.0.4          |
+| DVWA 1   | No                  |    10.0.0.4          |
+| DVWA 2   | No                  |    10.0.0.4          |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
